@@ -17,6 +17,7 @@ jobs:
         apt:
           - '^libxcb.*-dev'
           - libxkbcommon-x11-dev
+          - libegl1-mesa
       envs: |
         - linux: py310-glue_jupyter
         - linux: py310-glue_astronomy
