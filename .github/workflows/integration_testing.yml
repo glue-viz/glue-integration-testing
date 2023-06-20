@@ -19,8 +19,15 @@ jobs:
           - libxkbcommon-x11-dev
           - libegl1-mesa
       envs: |
+
         - linux: py310-glue_jupyter
         - linux: py310-glue_astronomy
         - linux: py310-glue_wwt
         - linux: py310-glue_vispy_viewers
         - linux: py310-jdaviz
+
+        - linux: py310-glue_jupyter-dev
+        - linux: py310-glue_astronomy-dev
+        - linux: py310-glue_wwt-dev
+        - linux: py310-glue_vispy_viewers-dev
+        - linux: py310-jdaviz-dev
