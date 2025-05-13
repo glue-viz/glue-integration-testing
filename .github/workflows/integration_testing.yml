@@ -20,6 +20,7 @@ jobs:
           - libegl1
           - libopenblas-dev
           - libhdf5-dev
+          - libportaudio2
       envs: |
 
         - linux: py310-stable
