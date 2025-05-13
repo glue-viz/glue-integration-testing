@@ -17,7 +17,9 @@ jobs:
         apt:
           - '^libxcb.*-dev'
           - libxkbcommon-x11-dev
-          - libegl1-mesa
+          - libegl1
+          - libopenblas-dev
+          - libhdf5-dev
       envs: |
 
         - linux: py310-stable
