@@ -17,17 +17,43 @@ jobs:
         apt:
           - '^libxcb.*-dev'
           - libxkbcommon-x11-dev
-          - libegl1-mesa
+          - libegl1
+          - libopenblas-dev
+          - libhdf5-dev
+          - libportaudio2
       envs: |
 
-        - linux: py310-glue_jupyter
-        - linux: py310-glue_astronomy
-        - linux: py310-glue_wwt
-        - linux: py310-glue_vispy_viewers
-        - linux: py310-jdaviz
+        - linux: py310-stable
+        - linux: py311-stable
+        - linux: py312-stable
+        - linux: py313-stable
 
-        - linux: py310-glue_jupyter-dev
-        - linux: py310-glue_astronomy-dev
-        - linux: py310-glue_wwt-dev
-        - linux: py310-glue_vispy_viewers-dev
-        - linux: py310-jdaviz-dev
+        - linux: py310-stable-qt
+        - linux: py311-stable-qt
+        - linux: py312-stable-qt
+        - linux: py313-stable-qt
+
+        - linux: py310-pre
+        - linux: py311-pre
+        - linux: py312-pre
+        - linux: py313-pre
+
+        - linux: py310-pre-qt
+        - linux: py311-pre-qt
+        - linux: py312-pre-qt
+        - linux: py313-pre-qt
+
+        - linux: py310-dev
+        - linux: py311-dev
+        - linux: py312-dev
+        - linux: py313-dev
+
+        - linux: py310-dev-qt
+        - linux: py311-dev-qt
+        - linux: py312-dev-qt
+        - linux: py313-dev-qt
+
+        - linux: py310-conda
+        - linux: py311-conda
+        - linux: py312-conda
+        - linux: py313-conda
